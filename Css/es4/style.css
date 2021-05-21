@@ -1,0 +1,113 @@
+html {
+    font-size: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: [start-colum] 1fr [second-colum] 1fr [three-colum] 1fr [four-colum] 1fr [end-colum] auto;
+    grid-template-rows: [start-row] 1fr [second-row] 1fr [three-row] 1fr [four-row] 1fr [five-row] 1fr [six-row] 1fr [end-row] auto;
+    max-width: 350px;
+    border-style:solid;
+    border-width: 3px;
+	border-radius: 10px;
+
+}
+
+.result {
+    grid-column: start-colum / end-colum;
+    grid-row: start-row;
+    text-align: right;
+    background-color: gray;
+    font-size: 2rem;
+}
+
+.operator_1 {
+    grid-column: start-colum / second-colum;
+    grid-row: second-row;
+}
+.operator_2 {
+    grid-column: second-colum / three-colum;
+    grid-row: second-row;
+}
+.operator_3 {
+    grid-column: three-colum / four-colum;
+    grid-row: second-row;
+}
+.operator_4 {
+    grid-column: four-colum / end-colum;
+    grid-row: second-row;
+}
+
+.num_key {
+    padding: 1rem 1.25rem;
+	font-size: 1.1rem;
+    background-color: whitesmoke;
+}
+
+.num_key_7 {
+	grid-column: start-colum / second-colum;
+    grid-row: three-row;
+	grid-gap: 2px;
+}
+.num_key_8 {
+	grid-column: second-colum / three-colum;
+    grid-row: three-row;
+	grid-gap: 2px;
+}
+.num_key_9 {
+	grid-column: three-colum / four-colum;
+    grid-row: three-row;
+	grid-gap: 2px;
+}
+.num_key_4 {
+	grid-column: start-colum / second-colum;
+    grid-row: four-row;
+	grid-gap: 2px;
+}
+.num_key_5 {
+	grid-column: second-colum / three-colum;
+    grid-row: four-row;
+	grid-gap: 2px;
+}
+.num_key_6 {
+	grid-column: three-colum / four-colum;
+    grid-row: four-row;
+	grid-gap: 2px;
+}
+.num_key_1 {
+	grid-column: start-colum / second-colum;
+    grid-row: five-row;
+	grid-gap: 2px;
+}
+.num_key_2 {
+	grid-column: second-colum / three-colum;
+    grid-row: five-row;
+	grid-gap: 2px;
+}
+.num_key_3 {
+	grid-column: three-colum / four-colum;
+    grid-row: five-row;
+	grid-gap: 2px;
+}
+.num_key_0 {
+	grid-column: start-colum / second-colum;
+    grid-row: six-row;
+	grid-gap: 2px;
+}
+.num_key_point {
+	grid-column: second-colum / three-colum;
+    grid-row: six-row;
+	grid-gap: 2px;
+}
+.num_key_ac {
+	grid-column: three-colum / four-colum;
+    grid-row: six-row;
+	grid-gap: 2px;
+}
+
+.butt_enter {
+    grid-column: four-colum / end-colum;
+    grid-row: three-row / end-row;
+	grid-gap: 2px;
+    background-color: crimson;
+}
